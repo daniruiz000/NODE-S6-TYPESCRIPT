@@ -10,7 +10,7 @@ Typescript infiere los tipos de las variables aunque no se declare.
  */
 
 
- // string
+ // String
 // Admite "",'',``
  const miTexto : string = "Hola amigos"
  const miTextoDos : string = 'Hola amigos'
@@ -22,7 +22,8 @@ Typescript infiere los tipos de las variables aunque no se declare.
  const isSunday : boolean = false
  const isFriday : boolean = true
 
- /* Valores no definidos: Dejamos que infiera el tipo.
+ /* Valores no definidos: 
+ Dejamos que infiera el tipo.
  Es mejor dejar definido el tipo aunque no tenga mos el valor.
  */
  let miValor: string // valor undefined
@@ -46,9 +47,11 @@ const address : object ={ street: "calle false", num: "123"}
 
 //ARRAY
 /*Dos maneras :
+Indicamos el tipo que deben de tener los elementos del array.
 */
-// Indicamos el tipo que deben de tener los elementos del array.
+ 
 const coches :string[] = ["audi", "ferrari", "ford"]
+
 const ciudades : Array<string> = ["Madrid", "Valencia", "Barcelona"]
 
 console.log(coches[1])
