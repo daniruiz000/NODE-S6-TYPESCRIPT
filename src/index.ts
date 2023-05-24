@@ -1,7 +1,9 @@
-// NUMBER 
-let numeroEntero : number = 10
-const numeroDecimal : number = 2.5
-const numeroNegatibos : number = -4
+/* eslint-disable prefer-const */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// NUMBER
+const numeroEntero: number = 10
+const numeroDecimal: number = 2.5
+const numeroNegatibos: number = -4
 
 /*
 Typescript infiere los tipos de las variables aunque no se declare.
@@ -9,51 +11,48 @@ Typescript infiere los tipos de las variables aunque no se declare.
  variable = 45
  */
 
-
- // String
+// String
 // Admite "",'',``
- const miTexto : string = "Hola amigos"
- const miTextoDos : string = 'Hola amigos'
- const miTextoTres : string = `Hola amigos ${numeroDecimal}`
+const miTexto: string = "Hola amigos"
+const miTextoDos: string = "Hola amigos"
+const miTextoTres: string = `Hola amigos ${numeroDecimal}`
 
+// Boolean
 
- // Boolean
+const isSunday: boolean = false
+const isFriday: boolean = true
 
- const isSunday : boolean = false
- const isFriday : boolean = true
-
- /* Valores no definidos: 
+/* Valores no definidos:
  Dejamos que infiera el tipo.
  Es mejor dejar definido el tipo aunque no tenga mos el valor.
  */
- let miValor: string // valor undefined
- miValor = "Ya tengo valor"
+let miValor: string // valor undefined
+miValor = "Ya tengo valor"
 
-
- // ANY
- /* Cuando declaramos una variable sin asignarle ningun valor,
+// ANY
+/* Cuando declaramos una variable sin asignarle ningun valor,
   le infiere un tipo any (puede ser cualquier tipo. Mala praxis)
   No aporta nada si estamos usando typescripe.
   */
- 
- let pruebaAny : any = 123
- pruebaAny = "Ahora tiene un string"
- pruebaAny = false
 
- //OBJETOS
+let pruebaAny: any = 123
+pruebaAny = "Ahora tiene un string"
+pruebaAny = false
+
+// OBJETOS
 // No se tipan las claves del objeto, aunque el infiere los tipos de dichas claves.
 
-const address : object ={ street: "calle false", num: "123"}
+const address: object = { street: "calle false", num: "123" }
 
-//ARRAY
-/*Dos maneras :
+// ARRAY
+/* Dos maneras :
 Indicamos el tipo que deben de tener los elementos del array.
 */
- 
-const coches :string[] = ["audi", "ferrari", "ford"]
 
-const ciudades : Array<string> = ["Madrid", "Valencia", "Barcelona"]
+const coches: string[] = ["audi", "ferrari", "ford"]
+
+const ciudades: string[] = ["Madrid", "Valencia", "Barcelona"]
 
 console.log(coches[1])
 
-const notas : number[] = [7,8,9]
+const notas: number[] = [7, 8, 9]
